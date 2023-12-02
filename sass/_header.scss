@@ -1,0 +1,119 @@
+#hero {
+  background-color: rgb(252, 241, 244);
+  padding: 10px 0 140px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 52px;
+  .nav_links {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+    a {
+      @include a-link;
+      &:hover {
+        color: $color-red;
+        opacity: 1;
+      }
+      &:first-child {
+        font-weight: 700;
+        color: $color-red;
+        opacity: 1;
+      }
+    }
+  }
+  .nav_btn {
+    @include button-style;
+    border: 2px solid transparent;
+    padding: 14px 50px;
+    &:active {
+      @include button-active;
+    }
+  }
+}
+.header_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .left_header {
+    max-width: 665px;
+    h4 {
+      color: $color-black;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1.4px;
+    }
+    h1 {
+      color: $color-black;
+      opacity: 0.9;
+      font-family: "Fredoka One", sans-serif;
+      font-weight: 400;
+      font-size: 57.33px;
+      line-height: 120.5%;
+      margin: 6px 0 35px;
+      span {
+        opacity: 0.9;
+        color: #d23166;
+        font-family: Fredoka One;
+        font-size: 57.33px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120.5%;
+      }
+    }
+    p {
+      @include p(18px);
+      max-width: 525px;
+      margin-bottom: 50px;
+    }
+    .head_btn {
+      @include button-style;
+      padding: 14px 50px;
+      border: 2px solid transparent;
+      &:active {
+        @include button-active;
+      }
+    }
+  }
+}
+.header_img {
+  position: relative;
+  &::after {
+    content: "";
+    width: 365px;
+    height: 353px;
+    border-radius: 50%;
+    background-color: $color-red;
+    position: absolute;
+    opacity: 0.1;
+    top: 46%;
+    left: 2%;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../assets/img/milky.png);
+    top: 33%;
+    left: -17%;
+    z-index: 1;
+    transform: rotate(4.793deg);
+    width: 465px;
+    height: 420px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .shadow_circle {
+    top: 117%;
+    position: absolute;
+    width: 173px;
+    height: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #edb5c7;
+    opacity: 0.87;
+    filter: blur(16px);
+  }
+}

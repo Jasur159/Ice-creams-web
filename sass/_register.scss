@@ -1,0 +1,106 @@
+.regiter_card {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(80px);
+  width: 500px;
+  margin: 0 auto;
+  padding: 30px 40px 70px 30px;
+  border-radius: 16px;
+  transition: 1.2s;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    color: rgb(245, 65, 95);
+    text-align: center;
+  }
+  h4 {
+    color: #a30e0e;
+    margin: 30px 0 40px;
+    text-align: center;
+    font-weight: 400;
+  }
+  h4 + p {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+.register_inputs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  .register_input {
+    width: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    input {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.3);
+      outline: none;
+      padding: 10px 50px 10px 13px;
+      border-radius: 5px;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+    }
+    label {
+      position: absolute;
+      color: #fff;
+      top: -15px;
+      font-size: 12px;
+      left: 10px;
+    }
+  }
+}
+.type_Of_User {
+  width: 92%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  p {
+    color: white;
+    button {
+      border: none;
+      background-color: transparent;
+      color: white;
+      text-decoration: underline;
+      cursor: pointer;
+      &:active {
+        opacity: 0.8;
+      }
+    }
+  }
+  #guest_Btn {
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    &:active {
+      opacity: 0.8;
+    }
+  }
+}
+#registerBtn {
+  width: 100%;
+  border: 2px solid transparent;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 20px 0 30px;
+  background-color: #00d4ff;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+  transition: 0.3s;
+  &:active {
+    border: 2px solid #00d4ff;
+    background-color: transparent;
+    color: #00d4ff;
+  }
+}

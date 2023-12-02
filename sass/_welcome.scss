@@ -1,0 +1,14 @@
+.welcome_page {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  background-color: rgba(255, 192, 203, 0.858);
+  h1 {
+    font-size: 70px;
+    font-style: italic;
+    -webkit-text-fill-color: rgb(255, 0, 195);
+    -webkit-text-stroke: 1px black;
+  }
+}
+

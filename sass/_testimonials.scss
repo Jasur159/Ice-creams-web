@@ -1,0 +1,52 @@
+#Testimonials {
+  padding: 90px 0 0;
+  background-color: #f8edf0;
+}
+.testimonials_content {
+  display: flex;
+  gap: 135px;
+  .testimonial_phone_img img {
+    border-radius: 25px;
+  }
+}
+.testimonials_right_cnt {
+  max-width: 621px;
+  h1 {
+    @include section-headlines(
+      $font-family: Roboto,
+      $line-height: normal,
+      $font-weight: 500,
+      $color: $color-dark-black
+    );
+  }
+  p {
+    @include p(18px, $color-black, normal, 0.7, Roboto);
+    max-width: 607px;
+    margin: 20px 0 31px;
+  }
+  ul {
+    margin-left: 30px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 41px;
+    li {
+      padding-left: 10px;
+      &:nth-child(1) {
+        list-style-image: url(../assets/icons/selectyourFood.png);
+      }
+      &:nth-child(2) {
+        list-style-image: url(../assets/icons/addToCard.svg);
+      }
+      &:nth-child(3) {
+        list-style-image: url(../assets/icons/OrderFood.svg);
+      }
+    }
+  }
+  .download_links {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+}

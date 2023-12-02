@@ -1,0 +1,89 @@
+#Product {
+  padding: 140px 0 112px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    text-align: center;
+    margin-bottom: 65px;
+    @include section-headlines($line-height: normal);
+  }
+}
+.typesOfSweets_btns {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 50px;
+
+  .typeOfSweets_btn {
+    border: none;
+    border-bottom: 3px solid transparent;
+    opacity: 0.6;
+    color: $color-dark-black;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.4s;
+    &:hover,
+    &:first-child {
+      opacity: 1;
+      border-bottom: 3px solid $color-red;
+    }
+  }
+}
+#Pricing {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  row-gap: 35px;
+  .product_text_cnt {
+    max-width: 455px;
+    h3 {
+      @include h4-headline($font-size: 26px, $font-weight: 700);
+    }
+    p {
+      @include p($color: $color-dark-black, $opacity: 0.7);
+      margin: 11px 0 34px;
+    }
+    .prices {
+      display: flex;
+      gap: 5px;
+      .current_price {
+        color: #000;
+        font-family: Hind Madurai;
+        transform: translateY(-6px);
+        font-size: 26px;
+        font-weight: 500;
+      }
+      .last_price {
+        color: #000;
+        opacity: 0.7;
+        font-family: Hind Madurai;
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration: line-through;
+        margin-bottom: 10px;
+      }
+    }
+    .product_btn {
+      border: 2px solid transparent;
+      padding: 15px 55px 15px 46px;
+      @include button-style;
+      &:active {
+        @include button-active;
+      }
+    }
+  }
+}
+.brown_bread_img + .product_text_cnt {
+  margin-left: 85px;
+}
+.brown_bread_img + .product_text_cnt + .product_text_cnt {
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  flex-direction: column;
+}
+.Sweet_corn_img + .product_text_cnt {
+  margin-left: 85px;
+}

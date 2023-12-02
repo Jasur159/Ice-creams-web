@@ -1,0 +1,103 @@
+footer {
+  padding: 70px 0 115px;
+  background-color: $footer-color;
+}
+.footer_content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr 2.5fr;
+  column-gap: 37px;
+  max-width: 1090px;
+  align-items: center;
+  margin: 0 auto;
+}
+.footer_links_box:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  p {
+    @include p(12px, $color-grey, 139.687%, 0.7, Roboto);
+    margin: 9px 0 25px;
+    max-width: 207px;
+  }
+  h4 {
+    color: $color-grey;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .social_links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    a {
+      transition: 0.1s;
+    }
+    a:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+.footer_links_box:nth-child(2),
+.footer_links_box:nth-child(3) {
+  margin-top: 73px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+  a {
+    transition: 0.1s;
+    @include a-link($color-grey, 12px, 0.7);
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+.footer_links_box:nth-child(2) {
+  a:nth-child(1) {
+    opacity: 1;
+  }
+}
+.newsletter_box {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  label {
+    color: $color-grey;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 13px;
+  }
+  .email_box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    .email {
+      width: 100%;
+      border-radius: 5px;
+      border: 2px solid #d64374;
+      outline: none;
+      background-color: transparent;
+      padding: 20px 140px 20px 32px;
+      color: $color-grey;
+      font-size: 14px;
+    }
+    .subs_btn {
+      padding: 14px 18px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      @include button-style(20px);
+      border: 2px solid transparent;
+      &:active {
+        @include button-active;
+      }
+    }
+  }
+  .payment_types {
+    margin-top: 17px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+}

@@ -1,0 +1,58 @@
+$color-red: #d23166;
+$color-black: #0f0101;
+$color-dark-black: #000;
+$color-grey: #fff;
+$color-headline: #150101;
+$color-white: #fafafa;
+$footer-color: #0a0808;
+
+@mixin a-link($color: $color-headline, $font-size: 14px, $opacity: 0.6) {
+  color: $color;
+  font-size: 14px;
+  opacity: $opacity;
+}
+@mixin h4-headline($font-size: 20px, $font-weight: 600) {
+  color: $color-dark-black;
+  font-family: Hind Madurai;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+@mixin p(
+  $font-size: 16px,
+  $color: $color-black,
+  $line-height: 150%,
+  $opacity: 0.6,
+  $font-family: Hind Madurai
+) {
+  color: $color;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  opacity: $opacity;
+}
+@mixin button-style($font-size: 16px, $color: $color-white) {
+  border-radius: 5px;
+  background: $color-red;
+  color: $color;
+  font-family: Hind Madurai;
+  font-size: $font-size;
+  font-weight: 700;
+  cursor: pointer;
+}
+@mixin button-active {
+  border: 2px solid $color-red;
+  background-color: transparent;
+  color: $color-red;
+}
+@mixin section-headlines(
+  $color: $color-headline,
+  $line-height: 110.5%,
+  $font-weight: 600,
+  $font-family: "Hind Madurai"
+) {
+  color: $color;
+  font-family: $font-family;
+  font-size: 44.2px;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}

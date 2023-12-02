@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice Cream</title>
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="preloader">
+      <img src="./assets/img/Book.gif" />
+    </div>
+    <div class="welcome_page">
+      <h1>Welcome to our Website</h1>
+    </div>
+    <div class="background_page hide">
+      <div class="login_page hide">
+        <div class="login_card">
+          <h1>Ice-<span>Cream</span> Website</h1>
+          <h4>Welcome back</h4>
+          <p>Sign in to continue to Our Ice-cream Website</p>
+
+          <div class="login_inputs">
+            <div class="login_name_input">
+              <input type="text" id="LoginEmail" required />
+              <label>Email</label>
+            </div>
+            <div class="Login_password_input">
+              <input type="password" id="LoginPassword" required />
+              <label>Password</label>
+              <div id="show_pass_btn">
+                <i id="show" class="fa-sharp fa-solid fa-eye"></i>
+                <i id="unshow" class="fa-solid fa-eye-slash"></i>
+              </div>
+            </div>
+            <div class="Extra_task">
+              <div class="Save_me">
+                <input type="checkbox" id="checkbox" />
+                <p>Remember me</p>
+              </div>
+              <button type="button" id="fgt_Btn">Forgot Password?</button>
+            </div>
+            <button type="button" id="login_Submit_Btn">Login</button>
+          </div>
+          <div class="type_User">
+            <p>New user? <button id="Register_btn">Register Here</button></p>
+            <button type="button" id="guest_Btn">Use as Guest</button>
+          </div>
+        </div>
+      </div>
+      <div class="register_page hide">
+        <div class="regiter_card">
+          <h1>Ice-<span>Cream</span> Website</h1>
+          <h4>Registration form</h4>
+          <p>Sign in to continue to Our Ice-cream Website</p>
+
+          <div class="register_inputs">
+            <div class="register_input">
+              <input type="text" id="registerName" required />
+              <label>Name</label>
+            </div>
+            <div class="register_input">
+              <input type="text" id="registerSurname" required />
+              <label>Surname</label>
+            </div>
+            <div class="register_input">
+              <input type="email" name="email" required id="register_email" />
+              <label>Email</label>
+            </div>
+            <div class="register_input">
+              <input type="password" id="register_password" required />
+              <label for="password">Password</label>
+            </div>
+            <div class="register_input">
+              <input type="password" id="register_confirm_password" required />
+              <label for="password">Confirm Password</label>
+            </div>
+            <button type="button" id="registerBtn">Register</button>
+          </div>
+          <div class="type_Of_User">
+            <p>New user? <button id="RegToLogin_btn">Login Here</button></p>
+            <button type="button" id="guest_Btn">Use as Guest</button>
+          </div>
+        </div>
+      </div>
+      <div class="verification_page hide">
+        <div class="verify_card">
+          <h1>Ice-<span>Cream</span> Website</h1>
+          <h4>Verification</h4>
+          <p>Check Your E-mail for OTP</p>
+
+          <div class="varify_inputs_box">
+            <label class="varify_label">Enter your OTP here</label>
+            <div class="varify_inputs" id="veridy_inputs">
+              <input type="text" id="verify_input1" maxlength="1" />
+              <input type="text" id="verify_input2" maxlength="1" />
+              <input type="text" id="verify_input3" maxlength="1" />
+              <input type="text" id="verify_input4" maxlength="1" />
+              <input type="text" id="verify_input5" maxlength="1" />
+            </div>
+            <button type="button" id="verifySubmitBtn">Verify</button>
+          </div>
+          <div class="another_choices">
+            <p>
+              Not yet received?
+              <button type="button" id="resend_Btn">Resend</button>
+            </p>
+            <button type="button" id="backtoRegister">Back</button>
+          </div>
+        </div>
+      </div>
+      <div class="verified_page hide">
+        <div class="verified_card">
+          <h1>Ice-<span>Cream</span> Website</h1>
+          <h4>Verification</h4>
+          <p>Thank you</p>
+
+          <h3>You are verified</h3>
+          <div class="verified_icon">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <button type="button" id="backToLoginBtn">Login</button>
+        </div>
+      </div>
+    </div>
+    <div class="main hide">
+      <header id="hero">
+        <nav class="container">
+          <div class="nav_logo">
+            <a href="#">
+              <img src="./assets/icons/logo.png" alt="" />
+            </a>
+          </div>
+          <div class="nav_links">
+            <a href="#hero">Home</a>
+            <a href="#Product">Product</a>
+            <a href="#Pricing">Pricing</a>
+            <a href="#Testimonials">Testimonials</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+          <div class="nav_btn_box">
+            <button type="button" class="nav_btn">Buy Now</button>
+          </div>
+        </nav>
+        <div class="header_section container">
+          <div class="left_header">
+            <h4>Sweet fun, full of milk.</h4>
+            <h1>Feel inside cold with our delicious <span>ice-cream.</span></h1>
+            <p>
+              Some food has looked so awful that it's looked like something that
+              the dog's brought home, yet after one mouthful I've been left
+              eating my thoughts, my words.
+            </p>
+            <button type="button" class="head_btn">Buy Now</button>
+          </div>
+          <div class="header_img">
+            <img src="./assets/img/header_img.png" alt="ice-cream" />
+            <div class="shadow_circle"></div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="services container">
+          <div class="service_card">
+            <div class="service_icon">
+              <img src="./assets/icons/free_shipping.svg" alt="shipping" />
+            </div>
+            <h4>Free Shipping</h4>
+            <p>Last Chance! Free shipping on all orders ends today.</p>
+          </div>
+          <div class="service_card">
+            <div class="service_icon">
+              <img src="./assets/icons/packaging.svg" alt="packaging" />
+            </div>
+            <h4>Quick Packaging</h4>
+            <p>Last Chance! Free shipping on all orders ends today.</p>
+          </div>
+          <div class="service_card">
+            <div class="service_icon">
+              <img src="./assets/icons/money_back.svg" alt="money_back" />
+            </div>
+            <h4>100% Money Back</h4>
+            <p>Last Chance! Free shipping on all orders ends today.</p>
+          </div>
+          <div class="service_card">
+            <div class="service_icon">
+              <img src="./assets/icons/fast_delivery.svg" alt="fast_delivery" />
+            </div>
+            <h4>Fast Delivery</h4>
+            <p>Last Chance! Free shipping on all orders ends today.</p>
+          </div>
+        </section>
+        <section id="blog">
+          <div class="blog_content container">
+            <div class="blog_left_cnt">
+              <h1>Brown Sugar Oatmea</h1>
+              <p>
+                Together with McDonald’s, Burger King has grown to become
+                synonymous with burgers in the US.Together with McDonald’s,
+                Burger King has grown to become synonymous.
+              </p>
+              <button type="button" class="blog_btn">See Details</button>
+            </div>
+            <div class="blog_img">
+              <img src="./assets/img/brown_sugar.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <section id="Product" class="container">
+          <h1>Our Product</h1>
+          <div class="typesOfSweets_btns">
+            <button type="button" class="typeOfSweets_btn">ICE CREAM</button>
+            <button type="button" class="typeOfSweets_btn">
+              CAYENNE CHOCOLATE
+            </button>
+            <button type="button" class="typeOfSweets_btn">CAKE BATTER</button>
+            <button type="button" class="typeOfSweets_btn">CANDY CANE</button>
+            <button type="button" class="typeOfSweets_btn">PLATTERS</button>
+            <button type="button" class="typeOfSweets_btn">DESSERT</button>
+          </div>
+          <div id="Pricing">
+            <div class="brown_bread_img">
+              <img src="./assets/img/brown_bread.png" alt="" />
+            </div>
+            <div class="product_text_cnt">
+              <h3>Brown bread</h3>
+              <p>
+                Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
+                Pain is a pioneer in the healthy fast food scene.Bon Au Pain is
+                a pioneer in the healthy fast food scene.
+              </p>
+              <div class="prices">
+                <h3 class="current_price">$19.55</h3>
+                <h3 class="last_price">$22.55</h3>
+              </div>
+              <button class="product_btn" type="button">Buy Now</button>
+            </div>
+            <div class="product_text_cnt">
+              <h3>Cayenne chocolate</h3>
+              <p>
+                Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
+                Pain is a pioneer in the healthy fast food scene.Bon Au Pain is
+                a pioneer in the healthy fast food scene.
+              </p>
+              <div class="prices">
+                <h3 class="current_price">$19.55</h3>
+                <h3 class="last_price">$22.55</h3>
+              </div>
+              <button class="product_btn" type="button">Buy Now</button>
+            </div>
+            <div class="cayenne_choco_img">
+              <img src="./assets/img/cayenne_choco.png" alt="cayenne_choco" />
+            </div>
+            <div class="Sweet_corn_img">
+              <img src="./assets/img/sweet_corn.png" alt="sweet_corn" />
+            </div>
+            <div class="product_text_cnt">
+              <h3>Sweet corn</h3>
+              <p>
+                Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
+                Pain is a pioneer in the healthy fast food scene.Bon Au Pain is
+                a pioneer in the healthy fast food scene.
+              </p>
+              <div class="prices">
+                <h3 class="current_price">$19.55</h3>
+                <h3 class="last_price">$22.55</h3>
+              </div>
+              <button class="product_btn" type="button">Buy Now</button>
+            </div>
+          </div>
+        </section>
+        <section class="opinions container">
+          <div class="comments_box">
+            <div class="comment_top_cnt">
+              <div class="user_img">
+                <img src="./assets/icons/comment_main_img.svg" alt="" />
+              </div>
+              <div class="comment_username">
+                <h4>Adele A. McNeill</h4>
+                <h5>AMERICAN</h5>
+              </div>
+            </div>
+            <blockquote>
+              <svg
+                class="top"
+                width="11"
+                height="10"
+                viewBox="0 0 11 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.17215 0.00012207H9.70322C10.0548 0.00012207 10.3536 0.132713 10.5997 0.397819C10.8457 0.662975 10.9688 0.984924 10.9688 1.36379V4.09103C10.9688 4.46987 10.8458 4.79177 10.5997 5.05687C10.3536 5.32195 10.0547 5.45459 9.70322 5.45459H8.22679C8.05109 5.45459 7.90165 5.52091 7.7786 5.65345C7.65555 5.78592 7.59405 5.94699 7.59405 6.13648V6.36362C7.59405 6.86555 7.75886 7.29392 8.08839 7.6491C8.41795 8.00411 8.81558 8.18168 9.28144 8.18168H9.70322C9.81754 8.18168 9.91637 8.22678 9.9999 8.31668C10.0834 8.40659 10.1251 8.51316 10.1251 8.63627V9.54547C10.1251 9.66839 10.0834 9.77516 9.9999 9.86508C9.9163 9.95496 9.81756 10.0001 9.70322 10.0001H9.28141C8.82438 10.0001 8.38826 9.90406 7.97299 9.71237C7.55774 9.52065 7.19854 9.26134 6.89533 8.93461C6.59219 8.60786 6.35158 8.22089 6.17364 7.77341C5.99571 7.32596 5.90671 6.85605 5.90671 6.36365V1.36369C5.90671 0.984825 6.02976 0.662901 6.27579 0.397794C6.52182 0.132688 6.82067 0.00012207 7.17215 0.00012207Z"
+                  fill="#F6762C"
+                />
+                <path
+                  d="M0.369764 0.397697C0.615769 0.132591 0.914571 0 1.26615 0H3.79711C4.14869 0 4.44747 0.132591 4.69349 0.397697C4.9395 0.662878 5.0625 0.984802 5.0625 1.36367V4.0909C5.0625 4.46974 4.9395 4.79164 4.69349 5.05675C4.44747 5.32183 4.14866 5.45447 3.79711 5.45447H2.32069C2.14498 5.45447 1.99543 5.52079 1.87241 5.65333C1.7495 5.78587 1.68786 5.94687 1.68786 6.13635V6.3635C1.68786 6.86543 1.85267 7.2938 2.18227 7.64898C2.5118 8.00399 2.90934 8.18156 3.37524 8.18156H3.79711C3.91134 8.18156 4.01026 8.22666 4.0937 8.31656C4.1772 8.40647 4.21901 8.51303 4.21901 8.63615V9.54535C4.21901 9.66826 4.1772 9.77503 4.0937 9.86496C4.01029 9.95484 3.91136 9.99996 3.79711 9.99996H3.37524C2.91827 9.99996 2.48218 9.90394 2.06686 9.71224C1.65168 9.52052 1.29253 9.26121 0.9893 8.93449C0.686089 8.60774 0.445347 8.22066 0.267516 7.77329C0.0896153 7.32594 0.000573158 6.85593 0.000573158 6.36353V1.36357C0.0006423 0.984703 0.123575 0.662779 0.369764 0.397697Z"
+                  fill="#F6762C"
+                />
+              </svg>
+              <p>
+                Thanks a lot for the prompt service. Really appreciate.
+                Excellence taste in Every Bite.Add a joy of best Taste. Foodie
+                Moments.
+              </p>
+              <svg
+                class="bottom"
+                width="11"
+                height="10"
+                viewBox="0 0 11 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.7966 0.00012207H1.26553C0.913954 0.00012207 0.615174 0.132713 0.369054 0.397819C0.123049 0.662975 0 0.984924 0 1.36379V4.09103C0 4.46987 0.122979 4.79177 0.369054 5.05687C0.615151 5.32195 0.914023 5.45459 1.26553 5.45459H2.74196C2.91766 5.45459 3.0671 5.52091 3.19015 5.65345C3.3132 5.78592 3.3747 5.94699 3.3747 6.13648V6.36362C3.3747 6.86555 3.20989 7.29392 2.88036 7.6491C2.5508 8.00411 2.15317 8.18168 1.68731 8.18168H1.26553C1.15121 8.18168 1.05238 8.22678 0.968853 8.31668C0.885397 8.40659 0.843634 8.51316 0.843634 8.63627V9.54547C0.843634 9.66839 0.885397 9.77516 0.968853 9.86508C1.05245 9.95496 1.15119 10.0001 1.26553 10.0001H1.68734C2.14437 10.0001 2.58049 9.90406 2.99576 9.71237C3.41101 9.52065 3.77021 9.26134 4.07342 8.93461C4.37656 8.60786 4.61717 8.22089 4.79511 7.77341C4.97304 7.32596 5.06204 6.85605 5.06204 6.36365V1.36369C5.06204 0.984825 4.93899 0.662901 4.69296 0.397794C4.44693 0.132688 4.14808 0.00012207 3.7966 0.00012207Z"
+                  fill="#F6762C"
+                />
+                <path
+                  d="M10.599 0.397697C10.353 0.132591 10.0542 0 9.7026 0H7.17164C6.82006 0 6.52128 0.132591 6.27526 0.397697C6.02925 0.662878 5.90625 0.984802 5.90625 1.36367V4.0909C5.90625 4.46974 6.02925 4.79164 6.27526 5.05675C6.52128 5.32183 6.82009 5.45447 7.17164 5.45447H8.64806C8.82377 5.45447 8.97332 5.52079 9.09634 5.65333C9.21925 5.78587 9.28089 5.94687 9.28089 6.13635V6.3635C9.28089 6.86543 9.11608 7.2938 8.78648 7.64898C8.45695 8.00399 8.05941 8.18156 7.59351 8.18156H7.17164C7.05741 8.18156 6.95849 8.22666 6.87505 8.31656C6.79155 8.40647 6.74974 8.51303 6.74974 8.63615V9.54535C6.74974 9.66826 6.79155 9.77503 6.87505 9.86496C6.95846 9.95484 7.05739 9.99996 7.17164 9.99996H7.59351C8.05048 9.99996 8.48657 9.90394 8.90189 9.71224C9.31707 9.52052 9.67622 9.26121 9.97945 8.93449C10.2827 8.60774 10.5234 8.22066 10.7012 7.77329C10.8791 7.32594 10.9682 6.85593 10.9682 6.36353V1.36357C10.9681 0.984703 10.8452 0.662779 10.599 0.397697Z"
+                  fill="#F6762C"
+                />
+              </svg>
+            </blockquote>
+            <div id="comment_links">
+              <button type="button" class="arrow">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button type="button" class="img_button">
+                <img src="./assets/icons/comment_left_img.svg" />
+              </button>
+              <button type="button" class="img_button img_2">
+                <img src="./assets/icons/comment_main_img.svg" />
+              </button>
+              <button type="button" class="img_button">
+                <img src="./assets/icons/comment_right_img.svg" />
+              </button>
+              <button type="button" class="arrow">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="ice_creams">
+            <img src="./assets/img/ice_creams.png" alt="ice_creams" />
+          </div>
+        </section>
+        <section id="Testimonials">
+          <div class="testimonials_content container">
+            <div class="testimonial_phone_img">
+              <img src="./assets/img/order_img.png" alt="order_img" />
+            </div>
+            <div class="testimonials_right_cnt">
+              <h1>Simple Way To Order Your Food</h1>
+              <p>
+                Some food has looked so awful that it's looked like something
+                that the dog's brought home, yet after one mouthful I've been
+                left eating my thoughts.
+              </p>
+              <ul>
+                <li>Select Your Food</li>
+                <li>Add To Card</li>
+                <li>Order Your Food</li>
+              </ul>
+              <div class="download_links">
+                <a href="#">
+                  <img src="./assets/img/play_market.svg" />
+                </a>
+                <a href="#">
+                  <img src="./assets/img/app_store.svg" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <h1>Have Question in Mind? Let us help you</h1>
+          <div class="question_input_box">
+            <input placeholder="Enter your question" type="text" class="text" />
+            <button type="button" class="question_btn">Send</button>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer_content">
+          <div class="footer_links_box">
+            <div class="footer_logo">
+              <img src="./assets/icons/logo.png" alt="logo" />
+            </div>
+            <p>
+              Some food has looked so awful that it's looked like something that
+              the dog's brought home.
+            </p>
+            <h4>Follow Us</h4>
+            <div class="social_links">
+              <a href="#">
+                <img src="./assets/icons/facebook.svg" />
+              </a>
+              <a href="#">
+                <img src="./assets/icons/twiiter.svg" />
+              </a>
+              <a href="#">
+                <img src="./assets/icons/instagram.svg" />
+              </a>
+              <a href="#">
+                <img src="./assets/icons/linkedin.svg" />
+              </a>
+            </div>
+          </div>
+          <div class="footer_links_box">
+            <a href="#hero">Home</a>
+            <a href="#Product">Product</a>
+            <a href="#blog">Blog</a>
+            <a href="#Pricing">Pricing</a>
+            <a href="#Testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer_links_box">
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Search Terms</a>
+            <a href="#">Order & Return</a>
+          </div>
+          <div class="newsletter_box">
+            <label for="text">Newsletter</label>
+            <div class="email_box">
+              <input type="email" class="email" />
+              <button type="button" class="subs_btn">Subscribe</button>
+            </div>
+            <div class="payment_types">
+              <img src="./assets/icons/paypal.svg" />
+              <img src="./assets/icons/mastercard.svg" />
+              <img src="./assets/icons/visa.svg" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

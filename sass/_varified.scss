@@ -1,0 +1,65 @@
+.verified_card {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(80px);
+  width: 500px;
+  margin: 0 auto;
+  padding: 30px 40px 70px 30px;
+  border-radius: 16px;
+  transition: 1.2s;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    color: rgb(245, 65, 95);
+    text-align: center;
+  }
+  h4 {
+    color: #a30e0e;
+    margin: 20px 0 20px;
+    text-align: center;
+    font-weight: 400;
+  }
+  h4 + p {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  h3 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+.verified_icon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(12, 219, 12);
+  border-radius: 50%;
+  margin-bottom: 30px;
+  i {
+    color: white;
+    font-size: 50px;
+  }
+}
+
+#backToLoginBtn {
+  width: 90%;
+  border: 2px solid transparent;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 20px 0 30px;
+  background-color: #00d4ff;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+  transition: 0.3s;
+  &:active {
+    border: 2px solid #00d4ff;
+    background-color: transparent;
+    color: #00d4ff;
+  }
+}

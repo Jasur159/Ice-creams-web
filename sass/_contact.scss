@@ -1,0 +1,39 @@
+#contact {
+  padding: 145px 0 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 28px;
+  h1 {
+    @include section-headlines($color-dark-black, normal, 500, Roboto);
+    max-width: 522px;
+    text-align: center;
+  }
+}
+.question_input_box {
+  display: flex;
+  align-items: center;
+  width: 637px;
+  position: relative;
+  .text {
+    width: 100%;
+    padding: 30px;
+    padding-right: 150px;
+    color: #0f0000;
+    outline: none;
+    font-size: 14px;
+    border: none;
+  }
+  .question_btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    padding: 20px 40px;
+    @include button-style(20px);
+    &:active {
+      @include button-active;
+    }
+  }
+}
