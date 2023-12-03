@@ -140,22 +140,6 @@ registerSubmitBtn.addEventListener("click", () => {
     Userinfo.Password = registPasswordInput.value;
     localStorage.setItem("userInfo", JSON.stringify(Userinfo));
     randomNum = createRandomOTP();
-
-//////////// Function Send email ///////
-Email.send({
-  SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
-  To : registerEmailInput.value,
-  From : "ganiyevjasur7@gmail.com",
-  Subject : "OTP Code",
-  Body : randomNum
-}).then(
-message => alert(message)
-);
-
-
-
-
-
     registerComponent.classList.add("hide");
     VerifyComponent.classList.remove("hide");
   }
